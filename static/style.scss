@@ -91,7 +91,7 @@ $maincolor: #0bb54f;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 20px 0px;
   transition: all 0.3s ease-in-out;
 }
 .logo {
@@ -380,7 +380,7 @@ $maincolor: #0bb54f;
 
 // main content
 .main__content {
-  background-image: url("./images/bg9img.jpg");
+  background-image: url("../images/bg9img.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -947,7 +947,7 @@ input:focus {
   width: 100%;
   height: 220px;
   margin-top: 160px;
-  background-image: url("./images/return24.jfif");
+  background-image: url("../images/return24.jfif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -975,7 +975,7 @@ input:focus {
   &::before {
     position: absolute;
     content: "";
-    background-image: url("./images/monblock.png");
+    background-image: url("../images/monblock.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 3;
@@ -1118,7 +1118,7 @@ input:focus {
 
 // CODS FOR   DEFINITION
 .definition__img {
-  background-image: url("./images/definition.png");
+  background-image: url("../images/definition.png");
   background-position: inherit;
   background-repeat: no-repeat;
   height: 120px;
@@ -1265,7 +1265,7 @@ input:focus {
 }
 // CODS FOR INFO SECTION
 .info {
-  background-image: url("./images/about8.jfif");
+  background-image: url("../images/about8.jfif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1387,7 +1387,7 @@ input:focus {
   margin-top: 160px;
   width: 100%;
   height: 150px;
-  background-image: url("./images/return14.jpg");
+  background-image: url("../images/return14.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
