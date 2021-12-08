@@ -83,9 +83,9 @@ $maincolor: #0bb54f;
   border-bottom: 2px solid #e7e8e8;
 }
 .container {
+ @media (min-width:1300px) {
   max-width: 1270px;
-  padding-left: 16px;
-  padding-right: 16px;
+ }
 }
 .navbar__top {
   display: flex;
@@ -269,43 +269,15 @@ $maincolor: #0bb54f;
 }
 
 // change language
-.dropdown-toggle::after {
-  display: none;
-}
-.dropdown-menu {
-  border: none;
-  background-color: transparent;
-  transition: 0.5s all;
-}
-.dropdown-item:focus,
-.dropdown-item:hover {
-  background-color: transparent;
-}
-.dropdown-item {
-  padding: 0px 0px;
-  margin-top: -5px;
-  background: transparent;
-  @media (max-width: 768px) {
-    background: transparent;
+.lang__box {
+  display: flex;
+  align-items: center;
+  .lang__flag {
+    width: 40px;
+    height: 40px;
   }
-}
-.lang__img {
-  height: 48px;
-  background-color: rgba(22, 22, 31, 0.05);
-  @media (max-width: 900px) {
-    height: 44px;
-  }
-  @media (max-width: 768px) {
-    display: none;
-  }
-}
-.media__language {
-  display: block;
-  @media (max-width: 768px) {
-    display: block;
-  }
-  @media (max-width: 575px) {
-    height: 30px;
+  .lang__name {
+    color: black;
   }
 }
 .burger {
@@ -415,6 +387,10 @@ $maincolor: #0bb54f;
   position: relative;
   height: 530px;
   margin-top: 188px;
+  @media (max-width: 992px) {
+    margin-top: 132px;
+    height: 578px;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -422,7 +398,7 @@ $maincolor: #0bb54f;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.01);
   }
   &::after {
     content: "";
@@ -539,6 +515,10 @@ $maincolor: #0bb54f;
   font-weight: 900;
   font-size: 42px;
   height: 64px;
+  @media (max-width: 992px) {
+    height: 95px;
+    text-align: center;
+  }
   @media (max-width: 701px) {
     margin-top: 20px;
     height: 40px;
@@ -760,6 +740,12 @@ input:focus {
 }
 
 // WHY US SECTION
+.we__best {
+  padding-top: 90px;
+  @media (max-width: 576px) {
+    padding-top: 40px;
+  }
+}
 .why__uc {
   padding-top: 50px;
 }
@@ -898,7 +884,6 @@ input:focus {
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  margin-top: 90px;
   margin-bottom: 65px;
   @media (max-width: 576px) {
     font-size: 16px;
@@ -924,6 +909,9 @@ input:focus {
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
+  @media (max-width: 992px) {
+    justify-content: space-around;
+  }
   @media (max-width: 576px) {
     justify-content: center;
     align-items: center;
@@ -967,8 +955,12 @@ input:focus {
   @media (max-width: 1200px) {
     height: 200px;
   }
+  @media (max-width: 992px) {
+    margin-top: 120px;
+  }
   @media (max-width: 630px) {
     height: min-content;
+    margin-top: 80px;
   }
   &::after {
     position: absolute;
@@ -1288,6 +1280,7 @@ input:focus {
     padding-top: 20px;
     min-height: max-content;
     padding-bottom: 20px;
+    margin-top: 65px;
   }
   &::after {
     content: "";
@@ -1341,7 +1334,7 @@ input:focus {
 // CODS FOR CLIENT SECTION
 
 .clients {
-  margin-top: 45px;
+  padding-top: 45px;
 }
 .client__title {
   font-weight: 600;
@@ -1399,6 +1392,26 @@ input:focus {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  @media (max-width:992px) {
+    margin-top: 120px;
+  }
+  @media (max-width:576px) {
+    height: max-content;
+    padding: 20px 0px;
+    display: flex;
+    margin-top: 80px;
+  }
+  .stait__folderimg {
+    position: absolute;
+    right: 10px;
+    bottom: -20px;
+    width: 250px;
+    height: 300px;
+    z-index: 3;
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
   &::after {
     position: absolute;
     z-index: 2;
@@ -1409,28 +1422,25 @@ input:focus {
     height: 100%;
     background: rgba(255, 255, 255, 0.7);
   }
-  &::before {
-    content: url("./images/folder1.jpg");
-    position: absolute;
-    width: 200px;
-    height: 300px;
-    bottom: -12%;
-    right: 0;
-    z-index: 5;
-    object-fit: cover;
-  }
 }
 .stait__container {
   position: relative;
   z-index: 3;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   height: inherit;
 }
 .app__centent {
   display: flex;
   align-items: center;
+  @media (max-width: 992px) {
+    justify-content: space-evenly;
+  }
+  @media (max-width: 576px) {
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
 }
 .stait__text {
   font-size: 32px;
@@ -1438,6 +1448,15 @@ input:focus {
   font-weight: 800;
   word-break: break-word;
   width: 60%;
+  @media (max-width:992px) {
+    font-size: 26px;
+  }
+  @media (max-width:576px) {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 .stait__btn {
   text-transform: uppercase;
@@ -1464,6 +1483,9 @@ input:focus {
 }
 .modal-content {
   overflow: hidden;
+}
+.modal-dialog {
+  margin: auto !important;
 }
 .st__form {
   display: flex;
@@ -1517,7 +1539,10 @@ input:focus {
 
 // STYLE FOR COMMENT SECTION
 .comment {
-  margin-top: 90px;
+  padding-top: 90px;
+  @media (max-width:576px) {
+    padding-top: 70px;
+  }
 }
 .comm__title {
   font-weight: bold;
@@ -1542,6 +1567,7 @@ input:focus {
   }
   @media (max-width: 676px) {
     display: block;
+    margin-top: 35px;
   }
 }
 .left__video {
@@ -1639,14 +1665,14 @@ input:focus {
 // style for position section
 
 .geoposition {
-  margin-top: 120px;
+  padding-top: 120px;
   margin-bottom: 106px;
   @media (max-width: 992px) {
-    margin-top: 80px;
+    padding-top: 80px;
   }
   @media (max-width: 576px) {
-    margin-top: 50px;
     margin-bottom: 70px;
+    padding-top: 65px;
   }
 }
 .pos__title {
@@ -1662,10 +1688,10 @@ input:focus {
     margin-bottom: 50px;
   }
   @media (max-width: 768px) {
-    font-size: 18px;
+    font-size: 26px;
     margin-bottom: 35px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 576px) {
     font-size: 16px;
     margin-bottom: 25px;
     line-height: 22px;
@@ -1696,6 +1722,11 @@ input:focus {
   justify-content: space-between;
   height: 100%;
   padding: 50px 0px 30px 0px;
+  @media (max-width:992px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .f__left {
   display: flex;
@@ -1708,6 +1739,11 @@ input:focus {
   display: flex;
   flex-direction: column;
   max-width: 25%;
+  @media (max-width:992px) {
+    max-width: max-content;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .flink__text {
   margin-bottom: 20px;
@@ -1735,6 +1771,9 @@ input:focus {
 .f__menues {
   display: flex;
   flex-direction: column;
+@media (max-width:992px) {
+  display: none;
+}
 }
 .f__menu {
   margin-bottom: 20px;
@@ -1751,6 +1790,10 @@ input:focus {
 .d_al_end {
   display: flex;
   flex-direction: column;
+  @media (max-width:992px) {
+    justify-content: center;
+    align-items: center;
+  }
 }
 .d_end__title {
   text-transform: uppercase;
@@ -1764,7 +1807,10 @@ input:focus {
 .us__social {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+}
+.flink__social:nth-child(2){
+  margin: 0px 35px;
 }
 .pad {
   margin-top: 30px;
@@ -1777,6 +1823,9 @@ input:focus {
   opacity: 0.5;
   display: flex;
   justify-content: flex-end;
+  @media (max-width:992px) {
+    justify-content: center;
+  }
 }
 .propduct__comp {
   margin-top: 15px;
@@ -1784,6 +1833,9 @@ input:focus {
 .pr_comp__title {
   display: flex;
   justify-content: flex-end;
+  @media (max-width:992px) {
+    justify-content: center;
+  }
 }
 .pad__logo {
   display: flex;
