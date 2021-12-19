@@ -77,15 +77,16 @@ input[type="number"] {
   overflow: hidden;
 }
 // VARIABLES
-$maincolor: #0bb54f;
+$twocolor: #0bb54f;
+$maincolor: #005dc7;
 .header {
   background-color: #ffffff;
   border-bottom: 2px solid #e7e8e8;
 }
 .container {
- @media (min-width:1300px) {
-  max-width: 1270px;
- }
+  @media (min-width: 1300px) {
+    max-width: 1270px;
+  }
 }
 .navbar__top {
   display: flex;
@@ -95,19 +96,15 @@ $maincolor: #0bb54f;
   transition: all 0.3s ease-in-out;
 }
 .logo {
-  width: 230px;
-  height: 90px;
+  width: 300px;
+  height: 60px;
   @media (max-width: 575px) {
     width: 150px;
-    height: 60px;
+    height: 40px;
   }
   img {
-    width: 230px;
-    height: 90px;
-    @media (max-width: 575px) {
-      width: 150px;
-      height: 60px;
-    }
+    width: 100%;
+    height: 100%;
   }
 }
 // FOR CURRENCY
@@ -193,7 +190,7 @@ $maincolor: #0bb54f;
     width: 226px;
   }
   &:hover {
-    background: #0a86ec;
+    background: $twocolor;
   }
   @media (max-width: 920px) {
     height: 50px;
@@ -386,7 +383,7 @@ $maincolor: #0bb54f;
   background-size: cover;
   position: relative;
   height: 530px;
-  margin-top: 188px;
+  margin-top: 158px;
   @media (max-width: 992px) {
     margin-top: 132px;
     height: 578px;
@@ -416,7 +413,7 @@ $maincolor: #0bb54f;
     margin-top: 90px;
   }
   @media (max-width: 576px) {
-    margin-top: 102px;
+    margin-top: 82px;
   }
 }
 .main__cal__form {
@@ -822,7 +819,7 @@ input:focus {
   box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.5);
   .serv__logo {
     transform: rotateY(360deg);
-    background-color: #0a86ec;
+    background-color: $maincolor;
     svg {
       path {
         fill: white;
@@ -834,7 +831,7 @@ input:focus {
   width: max-content;
   height: max-content;
   padding: 12px;
-  border: 4px solid #0a86ec;
+  border: 4px solid $maincolor;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1108,10 +1105,10 @@ input:focus {
   &:hover {
     background-image: linear-gradient(
       to right,
-      rgb(10, 134, 236),
-      rgb(10, 134, 236),
-      rgb(10, 134, 236),
-      rgb(10, 134, 236)
+      $twocolor,
+      $twocolor,
+      $twocolor,
+      $twocolor
     );
   }
 }
@@ -1183,7 +1180,7 @@ input:focus {
     .dc__top,
     .button_slide {
       transition: all 0.3s ease-in-out;
-      box-shadow: inset 0 92px 0 0 #0a86ec;
+      box-shadow: inset 0 92px 0 0 $twocolor;
       backface-visibility: hidden;
       color: white;
     }
@@ -1260,7 +1257,7 @@ input:focus {
   transform: translateX(-50%);
   transition: all 0.3s ease-in-out;
   &:hover {
-    background-color: #0a86ec;
+    background-color: $twocolor;
   }
 }
 // CODS FOR INFO SECTION
@@ -1271,7 +1268,7 @@ input:focus {
   background-size: cover;
   min-height: 370px;
   margin-top: 170px;
-  padding-top: 74px;
+  padding-top: 55px;
   position: relative;
   @media (max-width: 768px) {
     margin-top: 110px;
@@ -1309,7 +1306,7 @@ input:focus {
     margin-bottom: 20px;
   }
   .comp__name {
-    color: #f8931f;
+    color: $maincolor;
     font-weight: 700;
     font-size: 28px;
     margin-left: 10px;
@@ -1318,7 +1315,7 @@ input:focus {
 .info__text {
   font-weight: 300;
   font-size: 22px;
-  line-height: 30px;
+  line-height: 36px;
   text-align: center;
   color: #000000;
   font-weight: 600;
@@ -1392,10 +1389,10 @@ input:focus {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  @media (max-width:992px) {
+  @media (max-width: 992px) {
     margin-top: 120px;
   }
-  @media (max-width:576px) {
+  @media (max-width: 576px) {
     height: max-content;
     padding: 20px 0px;
     display: flex;
@@ -1448,10 +1445,10 @@ input:focus {
   font-weight: 800;
   word-break: break-word;
   width: 60%;
-  @media (max-width:992px) {
+  @media (max-width: 992px) {
     font-size: 26px;
   }
-  @media (max-width:576px) {
+  @media (max-width: 576px) {
     font-size: 20px;
     width: 100%;
     text-align: center;
@@ -1469,7 +1466,7 @@ input:focus {
   font-weight: 600;
   color: white;
   &:hover {
-    background-color: #0a86ec;
+    background-color: $twocolor;
     color: white;
   }
 }
@@ -1483,7 +1480,7 @@ input:focus {
 }
 .modal-content {
   overflow: hidden;
-  @media (max-width:576px) {
+  @media (max-width: 576px) {
     width: 90%;
     margin: 0 auto;
   }
@@ -1533,7 +1530,7 @@ input:focus {
   font-weight: 600;
   border: none;
   &:hover {
-    background-color: #0a86ec;
+    background-color: $twocolor;
     color: white;
   }
 }
@@ -1544,7 +1541,7 @@ input:focus {
 // STYLE FOR COMMENT SECTION
 .comment {
   padding-top: 90px;
-  @media (max-width:576px) {
+  @media (max-width: 576px) {
     padding-top: 70px;
   }
 }
@@ -1726,30 +1723,30 @@ input:focus {
   justify-content: space-between;
   height: 100%;
   padding: 50px 0px 30px 0px;
-  @media (max-width:992px) {
+  @media (max-width: 992px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 }
 .f__left {
-  display: flex;
+ display: flex;
+ align-items: center;
 }
 .footer__logo {
-  width: 340px;
-  height: 110px;
+  width: 300px;
+  height: 64px;
 }
 .footer__adress {
   display: flex;
   flex-direction: column;
   max-width: 25%;
-  @media (max-width:992px) {
+  @media (max-width: 992px) {
     max-width: max-content;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
   }
-  
 }
 .flink__text {
   margin-bottom: 20px;
@@ -1768,7 +1765,7 @@ input:focus {
 }
 .flink__text:nth-last-child(1) {
   margin-bottom: 0px;
-  @media (max-width:992px) {
+  @media (max-width: 992px) {
     width: 80%;
     margin-bottom: 20px;
   }
@@ -1781,9 +1778,9 @@ input:focus {
 .f__menues {
   display: flex;
   flex-direction: column;
-@media (max-width:992px) {
-  display: none;
-}
+  @media (max-width: 992px) {
+    display: none;
+  }
 }
 .f__menu {
   margin-bottom: 20px;
@@ -1800,7 +1797,7 @@ input:focus {
 .d_al_end {
   display: flex;
   flex-direction: column;
-  @media (max-width:992px) {
+  @media (max-width: 992px) {
     justify-content: center;
     align-items: center;
   }
@@ -1808,7 +1805,7 @@ input:focus {
 .d_end__title {
   text-transform: uppercase;
   font-weight: 700;
-  color: #ea6a22;
+  color: $maincolor;
   font-size: 20px;
   margin-bottom: 20px;
   display: flex;
@@ -1819,7 +1816,7 @@ input:focus {
   align-items: center;
   justify-content: flex-end;
 }
-.flink__social:nth-child(2){
+.flink__social:nth-child(2) {
   margin: 0px 35px;
 }
 .pad {
@@ -1833,7 +1830,7 @@ input:focus {
   opacity: 0.5;
   display: flex;
   justify-content: flex-end;
-  @media (max-width:992px) {
+  @media (max-width: 992px) {
     justify-content: center;
   }
 }
@@ -1843,7 +1840,7 @@ input:focus {
 .pr_comp__title {
   display: flex;
   justify-content: flex-end;
-  @media (max-width:992px) {
+  @media (max-width: 992px) {
     justify-content: center;
   }
 }
@@ -1852,7 +1849,7 @@ input:focus {
   align-items: center;
   margin-top: 5px;
   &:hover {
-    color: #063df1;
+    color: $maincolor;
   }
   img {
     width: 24px;
@@ -1895,12 +1892,12 @@ input:focus {
 .btn-hover.color-5 {
   background-image: linear-gradient(
     to right,
-    #0ba360,
-    #3cba92,
-    #30dd8a,
-    #2bb673
+    #005dc7,
+    #156bce,
+    #1d72d3,
+    #268afd
   );
-  box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+  box-shadow: 0 4px 15px 0 rgba(0, 93, 199, 0.75);
 }
 
 // why uc
@@ -1948,7 +1945,7 @@ input:focus {
   width: 0;
   height: 0;
   border-radius: 100%;
-  background: #0a86ec;
+  background: $twocolor;
   transform: translate(-50%, -50%);
   transition: width var(--time), padding-top var(--time);
 }
@@ -2082,5 +2079,5 @@ input:focus {
   }
 }
 .myactive {
-  background-color: #063df1;
+  background-color: $twocolor;
 }

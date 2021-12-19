@@ -116,18 +116,23 @@ x.addListener(myFunction);
 function myModal() {
   let myrResulr = document.getElementById("exampleModal1");
   if (myrResulr.style.display === "block") {
+    document.getElementById("dc_1").classList.add("myactive");
     document.getElementById("slide_down").classList.add("myactive");
   } else {
+    document.getElementById("dc_1").classList.remove("myactive");
     document.getElementById("slide_down").classList.remove("myactive");
   }
 }
 let myremv = setInterval(myModal, 20);
 
 function myModal2() {
+  
   let myrResulr2 = document.getElementById("exampleModal2");
   if (myrResulr2.style.display === "block") {
+    document.getElementById("dc_2").classList.add("myactive");
     document.getElementById("slide_down2").classList.add("myactive");
   } else {
+    document.getElementById("dc_2").classList.remove("myactive");
     document.getElementById("slide_down2").classList.remove("myactive");
   }
 }
@@ -136,8 +141,10 @@ let myremv2 = setInterval(myModal2, 20);
 function myModal3() {
   let myrResulr3 = document.getElementById("exampleModal3");
   if (myrResulr3.style.display === "block") {
+    document.getElementById("dc_3").classList.add("myactive");
     document.getElementById("slide_down3").classList.add("myactive");
   } else {
+    document.getElementById("dc_3").classList.remove("myactive");
     document.getElementById("slide_down3").classList.remove("myactive");
   }
 }
@@ -146,8 +153,10 @@ let myremv3 = setInterval(myModal3, 20);
 function myModal4() {
   let myrResulr4 = document.getElementById("exampleModal4");
   if (myrResulr4.style.display === "block") {
+    document.getElementById("dc_4").classList.add("myactive");
     document.getElementById("slide_down4").classList.add("myactive");
   } else {
+    document.getElementById("dc_4").classList.remove("myactive");
     document.getElementById("slide_down4").classList.remove("myactive");
   }
 }
