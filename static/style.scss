@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Gilroy' !important;
+  font-family: "Gilroy" !important;
 }
 #snow {
   position: fixed;
@@ -81,6 +81,12 @@ $maincolor: #005dc7;
 .header {
   background-color: #ffffff;
   border-bottom: 2px solid #e7e8e8;
+  @media (max-width: 575px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+  }
 }
 .container {
   @media (min-width: 1300px) {
@@ -1729,8 +1735,8 @@ input:focus {
   }
 }
 .f__left {
- display: flex;
- align-items: center;
+  display: flex;
+  align-items: center;
 }
 .footer__logo {
   width: 300px;

@@ -63,6 +63,14 @@ input[type=number] {
   background-color: #ffffff;
   border-bottom: 2px solid #e7e8e8;
 }
+@media (max-width: 575px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+  }
+}
 
 @media (min-width: 1300px) {
   .container {
