@@ -93,7 +93,7 @@ input[type=number] {
 @media (max-width: 575px) {
   .logo {
     width: 150px;
-    height: 40px;
+    height: 35px;
   }
 }
 .logo img {
@@ -207,7 +207,7 @@ input[type=number] {
   }
 }
 .tell__usbtn:hover {
-  background: #0bb54f;
+  background: #0379ff;
 }
 @media (max-width: 920px) {
   .tell__usbtn {
@@ -772,7 +772,7 @@ input[type=number] {
 }
 
 .sn__number {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 24px;
   color: #005dc7;
   line-height: 26px;
@@ -1385,7 +1385,7 @@ input:focus {
   }
 }
 .ret__btn:hover {
-  background-image: linear-gradient(to right, #0bb54f, #0bb54f, #0bb54f, #0bb54f);
+  background-image: linear-gradient(to right, #0379ff, #0379ff, #0379ff, #0379ff);
 }
 
 .definition__img {
@@ -1459,21 +1459,18 @@ input:focus {
 .cards__hover:hover .dc__top,
 .cards__hover:hover .button_slide {
   transition: all 0.3s ease-in-out;
-  box-shadow: inset 0 92px 0 0 #0bb54f;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  background-color: #0379ff;
   color: white;
 }
 .cards__hover:hover .def__card {
   transform: scale(1.08);
   margin-top: -10px;
-  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.36);
 }
 .cards__hover:hover .dc__top {
   font-size: 40px;
 }
 .cards__hover:hover .dc__sum {
-  color: #0a86ec;
+  color: #0379ff;
 }
 
 .dc__top {
@@ -1544,7 +1541,7 @@ input:focus {
   transition: all 0.3s ease-in-out;
 }
 .more:hover {
-  background-color: #0bb54f;
+  background-color: #0379ff;
 }
 
 .info {
@@ -1792,7 +1789,7 @@ input:focus {
   color: white;
 }
 .stait__btn:hover {
-  background-color: #0bb54f;
+  background-color: #0379ff;
   color: white;
 }
 
@@ -1876,7 +1873,7 @@ input:focus {
   border: none;
 }
 .st__m__btn:hover {
-  background-color: #0bb54f;
+  background-color: #0379ff;
   color: white;
 }
 
@@ -2133,7 +2130,7 @@ input:focus {
 
 .footer__logo {
   width: 300px;
-  height: 64px;
+  height: 60px;
 }
 
 .footer__adress {
@@ -2365,7 +2362,7 @@ input:focus {
   width: 0;
   height: 0;
   border-radius: 100%;
-  background: #0bb54f;
+  background: #0379ff;
   transform: translate(-50%, -50%);
   transition: width var(--time), padding-top var(--time);
 }
@@ -2482,5 +2479,5 @@ input:focus {
 }
 
 .myactive {
-  background-color: #0bb54f;
+  background-color: #0379ff;
 }/*# sourceMappingURL=style.css.map */
