@@ -1,7 +1,8 @@
 @font-face {
-    font-family: "Gilroy";
-    src: url("font/Gilroy/Gilroy-Black.woff2") format("woff2"),
-        url("font/Gilroy/Gilroy-Black.woff") format("woff");
+    font-family: 'Gilroy';
+    src: url('font/Gilroy/Gilroy-Black.woff2') format('woff2'),
+        url('font/Gilroy/Gilroy-Black.woff') format('woff');
     font-style: normal;
     font-display: swap;
 }
+
