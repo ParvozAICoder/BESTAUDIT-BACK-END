@@ -1,8 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-}
-body{
   font-family: 'Gilroy' !important;
 }
 #snow {
@@ -531,7 +529,7 @@ $maincolor: #005dc7;
 .main__subtitle {
   opacity: 0.85;
   color: #000000;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 22px;
   margin: 25px 0px 5px 0px;
   @media (max-width: 575px) {
@@ -541,7 +539,7 @@ $maincolor: #005dc7;
   }
 }
 .main__subtitletwo {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 22px;
   @media (max-width: 576px) {
     font-size: 14px;
@@ -627,9 +625,9 @@ $maincolor: #005dc7;
   opacity: 0.5;
 }
 .sn__number {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
-  color: #16161f;
+  color: $maincolor;
   line-height: 26px;
   @media (max-width: 576px) {
     font-size: 20px;
@@ -644,7 +642,7 @@ $maincolor: #005dc7;
 }
 .call__now {
   color: #16161f;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 27px;
   line-height: 26px;
   @media (max-width: 576px) {
